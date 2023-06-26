@@ -1,0 +1,50 @@
+1. add mentor (post) = localhost:3000/api/mentors/add
+example:
+
+{
+  "name": "mentor2",
+  "email": "mentor1@email.com",
+  "age": 24,
+  "contact_no": 909000,
+  "department": "science",
+  "experience": 3,
+  "students": []
+}
+
+2. add student (post) = localhost:3000/api/students/add
+example:
+
+{
+  "name": "student2",
+  "age": 17,
+  "contact_no": 900090,
+  "department": "science",
+  "mentor": "64982e15341f3a1d26e12261"
+}
+
+3. show all students (get) = localhost:3000/api/students/all
+
+4. show all mentors (get) = localhost:3000/api/mentors/all
+
+5. show all students for perticular mentor (post) = localhost:3000/api/mentors/allStudents
+(send mentor _id)
+
+example: 
+
+{
+  "mentor": "64982e15341f3a1d26e12261"
+}
+
+6. updateMentor (put) = localhost:3000/api/students/updateMentor/:studentId
+
+(send student id on params)
+(send delete Mentor _id on oldMentor and updateMentor on mentor)
+
+example:
+
+{
+  "mentor": "6499391db5117ee1c92a707f",
+  "oldMentor": "6499362f885c8c4f18a86089"
+}
+
+
